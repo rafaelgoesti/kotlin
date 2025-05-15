@@ -1,0 +1,36 @@
+2. Funcionário e Bônus
+Crie uma classe abstrata Funcionario com nome, salario e método abstrato calcularBonus().
+Implemente Gerente (20% de bônus) e Analista (10% de bônus).
+
+3. Formas Geométricas
+Crie uma interface Forma com método calcularArea().
+Implemente Quadrado, Círculo e Retângulo.
+
+4. Veículo e Movimento
+Crie uma classe abstrata Veiculo com método mover().
+Implemente Carro, Barco e Avião com lógicas distintas.
+
+5. Sistema de Pagamento
+Crie uma interface Pagamento com o método processar(valor: Double).
+Implemente PIX, CartaoCredito, Dinheiro.
+
+6. Notificação Multicanal
+Crie a interface Notificacao com método enviar(mensagem: String).
+Implemente SMS, Email, Push.
+
+7. Conta Bancária
+Crie uma classe abstrata ContaBancaria com métodos sacar(), depositar() e verSaldo().
+Implemente ContaCorrente (com taxa de saque) e ContaPoupanca.
+
+8. Repositório Genérico
+Crie a interface genérica Repositorio<T> com os métodos:
+salvar(), remover(), buscarPorId().
+Implemente RepositorioUsuario e RepositorioProduto.
+
+9. Sistema de Autenticação
+Crie uma interface Autenticacao com login(usuario: String, senha: String): Boolean.
+Implemente LoginSenha e LoginBiometria.
+
+10. Serviço de Mensagem
+Crie uma classe abstrata MensagemService com método enviarMensagem(mensagem: String).
+Implemente WhatsAppService, TelegramService, EmailService.
