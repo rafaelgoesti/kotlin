@@ -1,6 +1,3 @@
-2. Funcionário e Bônus
-Crie uma classe abstrata Funcionario com nome, salario e método abstrato calcularBonus().
-Implemente Gerente (20% de bônus) e Analista (10% de bônus).
 
 3. Formas Geométricas
 Crie uma interface Forma com método calcularArea().
