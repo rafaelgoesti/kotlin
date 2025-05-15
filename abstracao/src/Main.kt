@@ -63,12 +63,18 @@ fun main(){
     println("Bônus do gerente: R$ ${gerente.calcularBonus()}")
     println("Bônus da analista: R$ ${analista.calcularBonus()}")
 
-    //
+    // Formas
     val quadrado = Quadro(5.0)
     val circulo = Circulo(3.0)
     val retangulo = Retangulo(4.0, 6.0)
-
     println("Área do quadrado: ${quadrado.calcularArea()}")
     println("Área do círculo: ${circulo.calcularArea()}")
     println("Área do retângulo: ${retangulo.calcularArea()}")
+
+    // Veiculos
+    val veiculos: List<Veiculo> = listOf(Carro(), Barco(), Aviao())
+
+    for (veiculo in veiculos) {
+        veiculo.mover()
+    }
 }

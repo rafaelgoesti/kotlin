@@ -1,8 +1,4 @@
 
-3. Formas Geométricas
-Crie uma interface Forma com método calcularArea().
-Implemente Quadrado, Círculo e Retângulo.
-
 4. Veículo e Movimento
 Crie uma classe abstrata Veiculo com método mover().
 Implemente Carro, Barco e Avião com lógicas distintas.
