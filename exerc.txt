@@ -1,16 +1,3 @@
-
-4. Veículo e Movimento
-Crie uma classe abstrata Veiculo com método mover().
-Implemente Carro, Barco e Avião com lógicas distintas.
-
-5. Sistema de Pagamento
-Crie uma interface Pagamento com o método processar(valor: Double).
-Implemente PIX, CartaoCredito, Dinheiro.
-
-6. Notificação Multicanal
-Crie a interface Notificacao com método enviar(mensagem: String).
-Implemente SMS, Email, Push.
-
 7. Conta Bancária
 Crie uma classe abstrata ContaBancaria com métodos sacar(), depositar() e verSaldo().
 Implemente ContaCorrente (com taxa de saque) e ContaPoupanca.

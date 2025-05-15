@@ -40,6 +40,36 @@ class Circulo(private val raio: Double) : Forma {
     }
 }
 
+//class Medicamento(val formula: String, val posologia: String){
+//    init {
+//        require(formula.length > 0){
+//            "Informe uma fórmula"
+//        }
+//
+//        require(posologia.length > 0){
+//            "Informe uma posologia"
+//        }
+//    }
+//}
+
+class SMT() : Notificacao{
+    override fun enviar(mensagem: String) {
+        println(mensagem)
+    }
+}
+
+class Email() : Notificacao{
+    override fun enviar(mensagem: String) {
+        println(mensagem)
+    }
+}
+
+class Push() : Notificacao{
+    override fun enviar(mensagem: String) {
+        println(mensagem)
+    }
+}
+
 fun main(){
     // Pagamentos
     val pagamento1: Pagamento = CartaoCredito()
@@ -57,7 +87,7 @@ fun main(){
     val animal03 = Leao()
     animal03.fazerSom()
 
-    // Funcionario
+    // Funcionários
     val gerente = Gerente("Rafael Góes", 2000.0)
     val analista = Analista("Thiago", 3500.0)
     println("Bônus do gerente: R$ ${gerente.calcularBonus()}")
@@ -77,4 +107,12 @@ fun main(){
     for (veiculo in veiculos) {
         veiculo.mover()
     }
+
+    // Notificações
+    val not1 = SMT()
+    not1.enviar("Mensagem enviada via SMT")
+    val not2 = Email()
+    not2.enviar("Mensagem enviada via email")
+    val not3 = Push()
+    not3.enviar("Mensagem enviada via push")
 }
